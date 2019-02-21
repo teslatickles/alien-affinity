@@ -1,25 +1,38 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import AlienAffinity from "./components/AlienAffinity";
+import { Row, Column } from "simple-flexbox";
+import whyDidYouUpdate from "why-did-you-update";
+
+import "./App.css";
+
+whyDidYouUpdate(React);
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      renderCount: 0
+    };
+    this.count = 0;
+  }
+
   render() {
+    this.count++;
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        {/* <header className="App-header">
+          <img
+            src="https://66.media.tumblr.com/6e32fcfbe0fd1c7df642fdebd70abcb6/tumblr_olws6c7A2U1tt1gglo1_540.gif"
+            alt="jhjh"
+          />
+        </header> */}
+        <Row horizontal="center" vertical="center">
+          <Column>
+            <div>
+              <AlienAffinity id="alien-affinity" />
+            </div>
+          </Column>
+        </Row>
       </div>
     );
   }
