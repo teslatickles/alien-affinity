@@ -1,4 +1,7 @@
-img {
+#main-app{
+  transform: translateY(35%);
+}
+img{
   display: flex;
   justify-content: center;
   align-content: center;
