@@ -1,4 +1,4 @@
-Simple, Fun Alien films' fan page disguised as a image carousel--mostly featuring Ripley ;)
+Simple, Fun Alien films' fan page disguised as an image carousel--mostly featuring Ripley ;)
 
 Tech Stack:
 
